@@ -1,8 +1,8 @@
 # Projector-practise
-### **<p align="center">Welcome to my first Python tasks repository! 🐍</p>**
+### Welcome to my first Python tasks repository! 🐍
 
 
-**<p align="center">Homework tasks from Projector Institute Python Beginning course** - [Link for course](https://prjctr.com/course/python-beginning) 
+Homework tasks from Projector Institute Python Beginning course - [Link for course](https://prjctr.com/course/python-beginning) 
 
 - This Git repository houses the Python tasks I completed during the Projector Python Beginning Course. 
 Here, you will find a collection of Python scripts and code snippets that showcase my progress and learning journey as I delved into the fundamentals of Python programming.
