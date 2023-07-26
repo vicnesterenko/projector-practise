@@ -7,16 +7,17 @@ Homework tasks from Projector Institute Python Beginning course - [Link for cour
 - This Git repository houses the Python tasks I completed during the Projector Python Beginning Course. 
 Here, you will find a collection of Python scripts and code snippets that showcase my progress and learning journey as I delved into the fundamentals of Python programming.
 
-## Folder Lec8_HW: 
+# Folder Lec8_HW - Algo-Riddles: The Coding Conundrum 
 
-### **<p align="center">Algo-Riddles: The Coding Conundrum Task</p>**
-- **Main task:** You have 100 cats. One day you decide to arrange all your cats in a giant circle. Initially, none of your cats have any hats on. You walk around the circle 100 times, always starting at the same spot, with the first cat (cat # 1). Every time you stop at a cat, you either put a hat on it if it doesn’t have one on, or you take its hat off if it has one on. In the first round, you stop at every cat, placing a hat on each one. In The second round, you only stop at every second cat (#2, #4, #6, #8, etc.). In The third round, you only stop at every third cat(#3, #6, #9, #12, etc.). You continue this process until you’ve made 100 rounds around the cats (e.g., you only visit the 100th cat). Write a program that simply outputs which cats have hats at the end.
-- **Optional task:** Make a function that can calculate hats with any amount of rounds and cats.
+### Main task
+-  You have 100 cats. One day you decide to arrange all your cats in a giant circle. Initially, none of your cats have any hats on. You walk around the circle 100 times, always starting at the same spot, with the first cat (cat # 1). Every time you stop at a cat, you either put a hat on it if it doesn’t have one on, or you take its hat off if it has one on. In the first round, you stop at every cat, placing a hat on each one. In The second round, you only stop at every second cat (#2, #4, #6, #8, etc.). In The third round, you only stop at every third cat(#3, #6, #9, #12, etc.). You continue this process until you’ve made 100 rounds around the cats (e.g., you only visit the 100th cat). Write a program that simply outputs which cats have hats at the end.
+### Optional task
+-  Make a function that can calculate hats with any amount of rounds and cats.
 
-## Folder Lec9_HW: 
-### **<p align="center">HW: Modules</p>**
-- **First task - main:** Create a file called `hello.py` that contains a single `function hello()`. This function should accept a single string parameter name print the text `Hello {name}!` to the interactive window with `{name}` replaced with the function argument. Add a file called `main.py` that imports the `hello()` function from `hello.py` and calls the function with your name.
-### **<p align="center">Optional -  Medical Terminology Guessing Game</p>**
+# Folder Lec9_HW - HW: Modules 
+## **First task**
+- Main: Create a file called `hello.py` that contains a single `function hello()`. This function should accept a single string parameter name print the text `Hello {name}!` to the interactive window with `{name}` replaced with the function argument. Add a file called `main.py` that imports the `hello()` function from `hello.py` and calls the function with your name.
+### Optional -  Medical Terminology Guessing Game
 
 ### Description
 
@@ -43,3 +44,25 @@ Here, you will find a collection of Python scripts and code snippets that showca
 ### Play Again
 
 - After each game, the game will prompt you if you want to play again. Type "yes" to start a new game, or "no" to exit the game.
+  
+## **Second task**
+
+To complete the task of installing the custom library (numpy) in a virtual environment, generating a requirements.txt file, and running the numpy code, follow these steps:
+
+
+### Custom Library Installation and Execution
+
+1. Create a virtual environment using the command `python -m venv myenv`.
+2. Activate the virtual environment:
+   - On Windows: `myenv\Scripts\activate`
+   - On macOS/Linux: `source myenv/bin/activate`
+3. Install the numpy package (version 1.22.4 or higher but lower than 2.0.0) within the virtual environment using `pip install "numpy>=1.22.4,<2.0.0"`.
+4. Generate the `requirements.txt` file using `pip freeze > requirements.txt`.
+5. Write the script (`numpy_example.py`) that imports numpy and executes code from the numpy website.
+6. Run the script within the virtual environment using `python numpy_example.py`.
+<div align="center">
+  <img width="534" alt="vicv" src="https://github.com/vicnesterenko/Projector-practise/assets/136901590/07e60086-27b5-4cd8-9f65-164b7844a5ce">
+</div>
+
+
+
