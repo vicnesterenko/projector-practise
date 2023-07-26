@@ -1,5 +1,5 @@
 # Projector-practise
-### Welcome to my first Python tasks repository! 🐍
+### <div align="center"> Welcome to my first Python tasks repository! 🐍</div>
 
 
 Homework tasks from Projector Institute Python Beginning course - [Link for course](https://prjctr.com/course/python-beginning) 
