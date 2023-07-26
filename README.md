@@ -14,7 +14,7 @@ Here, you will find a collection of Python scripts and code snippets that showca
 ### Optional task
 -  Make a function that can calculate hats with any amount of rounds and cats.
 
-# Folder Lec9_HW - HW: Modules 
+# Folder Lec9_HW - Modules 
 ## **First task**
 - Main: Create a file called `hello.py` that contains a single `function hello()`. This function should accept a single string parameter name print the text `Hello {name}!` to the interactive window with `{name}` replaced with the function argument. Add a file called `main.py` that imports the `hello()` function from `hello.py` and calls the function with your name.
 ### Optional -  Medical Terminology Guessing Game
@@ -65,4 +65,78 @@ To complete the task of installing the custom library (numpy) in a virtual envir
 </div>
 
 
+# Folder Lec10_HW - Context Manager and Files 
+## First task - Task1.py
 
+This Python script is designed to generate random numbers and store them in individual text files. The generated files are then organized into a folder called "Test1". The script also generates a summary file named "summary.txt" that lists the filenames and their corresponding randomly generated numbers. Once the summary file is created, the "Test1" folder is deleted.
+
+### Functionality
+
+1. `generate_name_files()`: Generates a list of uppercase letters from the English alphabet.
+
+2. `generate_random_numbers()`: Generates a random integer between 1 and 100 (inclusive).
+
+3. `create_folder_for_generation()`: Creates a folder named "Test1" in the directory specified by `LOCAL_PATH` if it does not already exist.
+
+4. `generate_summary_file(summary_content: str)`: This function orchestrates the entire process. It creates the "Test1" folder, generates random numbers for each letter of the alphabet (file name is letter.txt), saves them in individual text files, and then creates the "summary.txt" file containing the filenames and their respective generated numbers. Finally, it deletes the "Test1" folder.
+
+### Usage
+
+1. Set the `LOCAL_PATH` variable to the desired directory where you want the "Test1" folder and the "summary.txt" file to be created.
+
+2. Execute the script to generate random numbers and the summary file. The summary file will be located in the specified `LOCAL_PATH`.
+
+Note: Make sure you have the necessary permissions to create and delete files and folders in the specified `LOCAL_PATH`.
+## Second task - Task2.py
+
+This Python script is designed to read the content of a text file named "Task2_1.txt" located in the directory specified by `LOCAL_PATH`. It then converts the text to uppercase and saves the result in a new text file named "Task2_2.txt" in the same directory.
+
+### Functionality
+
+The script performs the following steps:
+
+1. Reads the content of "Task2_1.txt" located in the directory specified by `LOCAL_PATH`.
+
+2. Converts the text to uppercase.
+
+3. Creates a new text file named "Task2_2.txt" in the same directory (`LOCAL_PATH`).
+
+4. Writes the converted uppercase text into the newly created "Task2_2.txt" file.
+
+### Usage
+
+1. Set the `LOCAL_PATH` variable to the desired directory where the "Task2_1.txt" and "Task2_2.txt" files should be located.
+
+2. Place the text you want to convert to uppercase inside the "Task2_1.txt" file.
+
+3. Execute the script to read the content from "Task2_1.txt", convert it to uppercase, and save it in "Task2_2.txt" in the same directory.
+
+Note: Ensure that you have the necessary permissions to read and write files in the specified `LOCAL_PATH`. The script will overwrite the content of "Task2_2.txt" if it already exists.
+
+## Third and fourth task - Task3_4.py
+
+This Python script generates random scores for a list of players and saves the data in a CSV file. It then analyzes the generated scores to find the highest score achieved by each player and stores this information in another CSV file.
+
+### Functionality
+
+The script performs the following steps:
+
+1. Generates random scores for a list of players defined in the `PLAYERS` list.
+
+2. Saves the generated scores along with player names in a CSV file named "scores.csv" in the directory "Projector-practise/Lec10_HW".
+
+3. Analyzes the scores and identifies the highest score achieved by each player.
+
+4. Stores the highest scores in a new CSV file named "high_scores.csv" in the same directory "Projector-practise/Lec10_HW".
+
+### Usage
+
+1. Ensure that the `PLAYERS` list contains the names of players for whom you want to generate random scores.
+
+2. Execute the script to generate random scores for the players and save the data in "scores.csv".
+
+3. The script will analyze the scores and store the highest scores for each player in "high_scores.csv".
+
+4. Review the "scores.csv" and "high_scores.csv" files in the "Projector-practise/Lec10_HW" directory to see the generated scores and the highest scores for each player, respectively.
+
+Note: The script uses Python's built-in `csv` module to handle CSV file operations. Ensure that you have the necessary permissions to read and write files in the specified directory. The script will overwrite the content of "scores.csv" and "high_scores.csv" if these files already exist.
