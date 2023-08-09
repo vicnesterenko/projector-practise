@@ -1,5 +1,3 @@
-import telegram
-from telegram import ReplyKeyboardMarkup, KeyboardButton
 import telebot
 import requests
 
