@@ -117,33 +117,25 @@ Note: The script uses Python's built-in `csv` module to handle CSV file operatio
 # Folder Lec11_HW - HW: Network. Requests
 ## **Task1 and Task2**
 
-Visit my Telegram bot: [GirSearcher Bot](https://t.me/girseacherbot)
-
-This is a Python script that implements a Telegram bot using the `telebot` library. The bot responds to user messages, provides a welcome message when the `/start` or `/hello` commands are used, and searches for GIFs using the Giphy API based on user input.
-
-## How It Works
-
-The bot operates as follows:
-
-1. It listens to incoming messages from users on the Telegram platform. ![image](https://github.com/vicnesterenko/Projector-practise/assets/136901590/1861bd25-2443-45c3-9bda-f37642a02c34)
-2. If the user sends the `/start` or `/hello` command, the bot replies with a welcome message. ![image](https://github.com/vicnesterenko/Projector-practise/assets/136901590/bbc28c9b-8403-4f66-a43d-9ce04a925bce)
-3. For any other message, the bot searches for a GIF related to the content of the message using the Giphy API.
-4. If a suitable GIF is found, the bot replies to the user with a message containing the GIF's URL ![image](https://github.com/vicnesterenko/Projector-practise/assets/136901590/538f3478-c6b9-4b2b-991b-2f0457e7dc69)
-5.  If no GIF is found, the bot sends a message indicating that no GIFs were found for the given search. ![image](https://github.com/vicnesterenko/Projector-practise/assets/136901590/733c3d18-511c-4014-89e3-5f9ed37d0871)
+Visit my Telegram bot: [GifSearcher Bot](https://t.me/girseacherbot)
+![image](https://github.com/vicnesterenko/Projector-practise/assets/136901590/87afc972-1508-49f9-83a5-cb552d94136d)
 
 
-## Prerequisites
+GifBot is a Telegram bot built using the Telebot library in Python. It interacts with the Giphy API to search for and send random GIFs based on user input. Whether you're in need of a quick laugh or want to brighten up a conversation, GifBot is here to provide you with entertaining GIFs.
 
-Before running the bot, make sure you have:
+## Features
 
-- A valid Telegram Bot Token obtained by creating a bot on the [Telegram BotFather](https://core.telegram.org/bots#botfather).
-- Python 3.6 or higher installed.
-- The required Python packages installed (`telebot` and `requests`). You can install them using `pip install telebot requests`.
+- **Random GIFs:** Send a command to request a random GIF related to your search query.
+- **User-Friendly:** Start the conversation with `/start`, find GIFs with `/find`, and gracefully end with `/stop`.
+- **Interactive:** Engage with the bot in a natural conversational style to get the GIFs you want.
 
-## Configuration
+## How to Use
 
-1. Replace `'YOUR_BOT_TOKEN'` with your actual Telegram Bot Token in the `BOT_TOKEN` variable.
-2. The `get_random_gif_url` function uses the Giphy API to search for GIFs. You need an API key from Giphy, which you can obtain by signing up on the [Giphy Developers](https://developers.giphy.com/) website. Replace `'YOUR_GIPHY_API_KEY'` with your actual Giphy API key in the `API_KEY` variable.
+1. Start a chat with GifBot by sending the `/start` command.![image](https://github.com/vicnesterenko/Projector-practise/assets/136901590/bb094ceb-955b-441c-bf81-7b8242ae57a7)
+2. Use the `/find` command followed by a search query to receive a related GIF.![image](https://github.com/vicnesterenko/Projector-practise/assets/136901590/6fe7b4d3-3cf3-42b3-915f-b98bcaad4c57)
+3. Enjoy the GIF that GifBot sends in response to your search! ![image](https://github.com/vicnesterenko/Projector-practise/assets/136901590/5817f777-9417-4581-a31d-0610f74dc3b3)
+4. Whenever you're done, use the `/stop` command to bid farewell to GifBot. ![image](https://github.com/vicnesterenko/Projector-practise/assets/136901590/c8664fe7-0fb6-4e34-ac95-9dd56b787300)
+
 
 
 ## Deployment
