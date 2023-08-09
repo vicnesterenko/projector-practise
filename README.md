@@ -17,33 +17,6 @@ Here, you will find a collection of Python scripts and code snippets that showca
 # Folder Lec9_HW - Modules 
 ## **First task**
 - Main: Create a file called `hello.py` that contains a single `function hello()`. This function should accept a single string parameter name print the text `Hello {name}!` to the interactive window with `{name}` replaced with the function argument. Add a file called `main.py` that imports the `hello()` function from `hello.py` and calls the function with your name.
-### Optional -  Medical Terminology Guessing Game
-
-### Description
-
-- This is a simple Word Guessing Game implemented in Python. The game randomly selects a medical terminology word from a predefined list and provides the player with a hint related to that word. The player then has to guess the word by entering one letter at a time. The game provides feedback on correct and incorrect guesses and gives the player a limited number of attempts to guess the word correctly.
-
-### How to Play
-
-1. Run the `main.py` file to start the game.
-2. The game will display a hint related to the medical terminology word to be guessed.
-3. Guess the word by entering one letter at a time.
-4. You have a limited number of attempts to guess the word correctly (default is 6 attempts).
-5. The game will display the current progress of the word, showing the correctly guessed letters and placeholders for the remaining letters.
-6. Continue guessing until you correctly guess the word or run out of attempts.
-7. The game will inform you of the outcome and reveal the word after the game ends.
-
-### Word List and Hints
-
-- The game uses a predefined list of medical terminology words with corresponding hints. These hints provide a brief explanation of the term, helping players learn more about medical terminology while having fun.
-
-### Flexibility
-
-- The game is flexible and allows you to customize the list of medical terminology words and the maximum number of attempts. Simply modify the `MED_TERMINOLOGY` and `MAX_ATTEMPTS` variables in the `main.py` file to add or remove words from the list or change the number of attempts allowed per game.
-
-### Play Again
-
-- After each game, the game will prompt you if you want to play again. Type "yes" to start a new game, or "no" to exit the game.
   
 ## **Second task**
 
@@ -140,3 +113,41 @@ The script performs the following steps:
 4. Review the "scores.csv" and "high_scores.csv" files in the "Projector-practise/Lec10_HW" directory to see the generated scores and the highest scores for each player, respectively.
 
 Note: The script uses Python's built-in `csv` module to handle CSV file operations. Ensure that you have the necessary permissions to read and write files in the specified directory. The script will overwrite the content of "scores.csv" and "high_scores.csv" if these files already exist.
+
+# Folder Lec11_HW - HW: Network. Requests
+## **Task1 and Task2**
+
+Visit my Telegram bot: [GirSearcher Bot](https://t.me/girseacherbot)
+
+This is a Python script that implements a Telegram bot using the `telebot` library. The bot responds to user messages, provides a welcome message when the `/start` or `/hello` commands are used, and searches for GIFs using the Giphy API based on user input.
+
+## How It Works
+
+The bot operates as follows:
+
+1. It listens to incoming messages from users on the Telegram platform. ![image](https://github.com/vicnesterenko/Projector-practise/assets/136901590/1861bd25-2443-45c3-9bda-f37642a02c34)
+2. If the user sends the `/start` or `/hello` command, the bot replies with a welcome message. ![image](https://github.com/vicnesterenko/Projector-practise/assets/136901590/bbc28c9b-8403-4f66-a43d-9ce04a925bce)
+3. For any other message, the bot searches for a GIF related to the content of the message using the Giphy API.
+4. If a suitable GIF is found, the bot replies to the user with a message containing the GIF's URL ![image](https://github.com/vicnesterenko/Projector-practise/assets/136901590/538f3478-c6b9-4b2b-991b-2f0457e7dc69)
+5.  If no GIF is found, the bot sends a message indicating that no GIFs were found for the given search. ![image](https://github.com/vicnesterenko/Projector-practise/assets/136901590/733c3d18-511c-4014-89e3-5f9ed37d0871)
+
+
+## Prerequisites
+
+Before running the bot, make sure you have:
+
+- A valid Telegram Bot Token obtained by creating a bot on the [Telegram BotFather](https://core.telegram.org/bots#botfather).
+- Python 3.6 or higher installed.
+- The required Python packages installed (`telebot` and `requests`). You can install them using `pip install telebot requests`.
+
+## Configuration
+
+1. Replace `'YOUR_BOT_TOKEN'` with your actual Telegram Bot Token in the `BOT_TOKEN` variable.
+2. The `get_random_gif_url` function uses the Giphy API to search for GIFs. You need an API key from Giphy, which you can obtain by signing up on the [Giphy Developers](https://developers.giphy.com/) website. Replace `'YOUR_GIPHY_API_KEY'` with your actual Giphy API key in the `API_KEY` variable.
+
+
+## Deployment
+
+In progress to deploy to [![Deta Space](https://img.shields.io/badge/Deta-Space-ff69b4?logo=deta)](https://deta.space/your-project-name) platform.
+
+
