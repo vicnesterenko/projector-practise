@@ -55,4 +55,5 @@ def search_gif(message):
         )
 
 
-BOT.infinity_polling()
+if __name__ == "__main__":
+    BOT.infinity_polling()
