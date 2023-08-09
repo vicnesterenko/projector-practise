@@ -38,7 +38,19 @@ def send_welcome(message):
     BOT.reply_to(message, "Hi dear!💖 Write what gif you want.")
 
 
-@BOT.message_handler(commands=["find"], func=lambda msg: True)
+@BOT.message_handler(commands=["find"])
+def send_welcome(message):
+    BOT.reply_to(message, "Write what gif you want.")
+
+
+@BOT.message_handler(commands=["stop"])
+def send_welcome(message):
+    BOT.reply_to(
+        message, "Bye, dear user. See you soon. When you comeback write /start command!"
+    )
+
+
+@BOT.message_handler(func=lambda msg: True)
 def search_gif(message):
     search_obj = message.text
     gif_url = get_random_gif_url(search_obj)
@@ -54,13 +66,6 @@ def search_gif(message):
             f"Sorry, no GIFs found for search '{search_obj}'. Please try again.",
         )
         BOT.send_message(message.chat.id, "Write what gif you want.")
-
-
-@BOT.message_handler(commands=["stop"])
-def send_welcome(message):
-    BOT.reply_to(
-        message, "Bye, dear user. See you soon. When you comeback write /start command!"
-    )
 
 
 if __name__ == "__main__":
