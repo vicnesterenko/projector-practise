@@ -1,7 +1,7 @@
 import telebot
 import requests
 
-BOT_TOKEN = "YOUR TOKEN"  # my is secret
+BOT_TOKEN = ""  # my is secret
 BOT = telebot.TeleBot(BOT_TOKEN)
 
 
@@ -33,12 +33,12 @@ def get_random_gif_url(search_obj):
         return None
 
 
-@BOT.message_handler(commands=["start", "hello"])
+@BOT.message_handler(commands=["start"])
 def send_welcome(message):
-    BOT.reply_to(message, "Howdy, how are you doing?")
+    BOT.reply_to(message, "Hi dear!💖 Write what gif you want.")
 
 
-@BOT.message_handler(func=lambda msg: True)
+@BOT.message_handler(commands=["find"], func=lambda msg: True)
 def search_gif(message):
     search_obj = message.text
     gif_url = get_random_gif_url(search_obj)
@@ -47,11 +47,20 @@ def search_gif(message):
         BOT.send_message(
             message.chat.id, f"We found a GIF for you! Link for {search_obj}: {gif_url}"
         )
+        BOT.send_message(message.chat.id, "Write what gif you want.")
     else:
         BOT.send_message(
             message.chat.id,
             f"Sorry, no GIFs found for search '{search_obj}'. Please try again.",
         )
+        BOT.send_message(message.chat.id, "Write what gif you want.")
+
+
+@BOT.message_handler(commands=["stop"])
+def send_welcome(message):
+    BOT.reply_to(
+        message, "Bye, dear user. See you soon. When you comeback write /start command!"
+    )
 
 
 if __name__ == "__main__":
