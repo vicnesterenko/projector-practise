@@ -1,8 +1,8 @@
 def is_admin(func):
-    def wrapper(*arg, **kwargs):
+    def wrapper(**kwargs):
         user_type = kwargs.get("user_type")
         if user_type == "admin":
-            return func(*arg, **kwargs)
+            return func(**kwargs)
         else:
             try:
                 raise ValueError("Permission denied")
