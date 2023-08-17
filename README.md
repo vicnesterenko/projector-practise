@@ -117,29 +117,6 @@ Note: The script uses Python's built-in `csv` module to handle CSV file operatio
 # Folder Lec11_HW - HW: Network. Requests
 ## **Task1 and Task2**
 
-Visit my Telegram bot: [GifSearcher Bot](https://t.me/girseacherbot)
-![image](https://github.com/vicnesterenko/Projector-practise/assets/136901590/87afc972-1508-49f9-83a5-cb552d94136d)
-
-
-GifBot is a Telegram bot built using the Telebot library in Python. It interacts with the Giphy API to search for and send random GIFs based on user input. Whether you're in need of a quick laugh or want to brighten up a conversation, GifBot is here to provide you with entertaining GIFs.
-
-## Features
-
-- **Random GIFs:** Send a command to request a random GIF related to your search query.
-- **User-Friendly:** Start the conversation with `/start`, find GIFs with `/find`, and gracefully end with `/stop`.
-- **Interactive:** Engage with the bot in a natural conversational style to get the GIFs you want.
-
-## How to Use
-
-1. Start a chat with GifBot by sending the `/start` command.![image](https://github.com/vicnesterenko/Projector-practise/assets/136901590/bb094ceb-955b-441c-bf81-7b8242ae57a7)
-2. Use the `/find` command followed by a search query to receive a related GIF.![image](https://github.com/vicnesterenko/Projector-practise/assets/136901590/6fe7b4d3-3cf3-42b3-915f-b98bcaad4c57)
-3. Enjoy the GIF that GifBot sends in response to your search! ![image](https://github.com/vicnesterenko/Projector-practise/assets/136901590/5817f777-9417-4581-a31d-0610f74dc3b3)
-4. Whenever you're done, use the `/stop` command to bid farewell to GifBot. ![image](https://github.com/vicnesterenko/Projector-practise/assets/136901590/c8664fe7-0fb6-4e34-ac95-9dd56b787300)
-
-
-
-## Deployment
-
-In progress to deploy to [![Deta Space](https://img.shields.io/badge/Deta-Space-ff69b4?logo=deta)](https://deta.space/your-project-name) platform.
+Check out the [GIF Searcher Bot](https://github.com/vicnesterenko/gif_seacher_bot) repository for more information
 
 
