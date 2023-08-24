@@ -1,4 +1,4 @@
-# Projector-practise
+# Projector Institute Practise Homeworks
 ### <div align="center"> Welcome to my first Python tasks repository! 🐍</div>
 
 
