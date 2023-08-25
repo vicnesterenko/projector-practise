@@ -5,25 +5,37 @@ class Car:
         self.year = year
         self.speed = speed
 
-    @property
-    def accelerate(self):
-        return self.speed + NUM
+    def accelerate(self, num):
+        self.speed += num
 
-    @property
-    def brake(self):
-        return self.speed - NUM
+    def brake(self, num):
+        self.speed -= num
 
     def __str__(self):
-        type_car_ride = input("Choose your car ride - city or track: ")
-        if type_car_ride == "city":
-            return f"Decrease speed on {NUM}. {self.brand, self.model} speed now: {self.brake}"
-        else:
-            return f"Increase speed on {NUM}. {self.brand, self.model} speed now: {self.accelerate}"
+        return f"Car: {self.brand} {self.model}, Year: {self.year}, Speed: {self.speed}"
 
 
 if __name__ == "__main__":
-    NUM = 5
     MAZDA = Car("Mazda", "CX-5", 2012, 60)
-    print(MAZDA)
     RANGE_ROVER = Car("Range Rover", "SV", 2023, 80)
-    print(RANGE_ROVER)
+
+    while True:
+        try:
+            type_car_ride = input(
+                "Choose your car ride - city or track (or type 'exit' to quit): "
+            )
+            if type_car_ride == "exit":
+                break
+            elif type_car_ride == "city":
+                MAZDA.brake(5)
+                RANGE_ROVER.brake(5)
+            elif type_car_ride == "track":
+                MAZDA.accelerate(5)
+                RANGE_ROVER.accelerate(5)
+            else:
+                print("Invalid input. Please choose 'city' or 'track'")
+
+            print(MAZDA)
+            print(RANGE_ROVER)
+        except ValueError:
+            print("Invalid input. Please enter a valid number.")

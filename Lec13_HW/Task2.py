@@ -4,12 +4,12 @@ class Country:
         self.population = population
 
     def __add__(self, other):
-        if isinstance(other, Country):
-            new_country = f"{self.name} {other.name}"
-            new_population = self.population + other.population
-            return Country(new_country, new_population)
-        else:
+        if not isinstance(other, Country):
             raise ValueError("Can only add Country objects together")
+
+        other.name = f"{self.name} {other.name}"
+        other.population = self.population + other.population
+        return Country(other.name, other.population)
 
     def __str__(self):
         return f"Name: {self.name}, population: {self.population}"
