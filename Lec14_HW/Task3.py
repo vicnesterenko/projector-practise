@@ -1,3 +1,4 @@
+# in progress
 class Account:
     def __init__(self, balance, account_number):
         self._balance = balance
@@ -27,3 +28,21 @@ class Account:
 
     def __str__(self):
         return f"Account number: {self._account_number}, balance: {self._balance}"
+
+
+class SavingsAccount(Account):
+    def __init__(self, balance, account_number, interest):
+        super.__init__(balance, account_number)
+        self.interest = interest
+
+    def add_interest_to_account(self):
+        pass
+
+
+class CurrentAccount(Account):
+    def __init__(self, balance, account_number, limit):
+        super.__init__(balance, account_number)
+        self.limit = limit
+
+
+# class Bank()
