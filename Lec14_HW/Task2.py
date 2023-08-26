@@ -11,6 +11,8 @@ class FastFood(Restaurant):
         self.drive_thru = drive_thru
 
     def order(self, dish_name: str, quantity: int):
+        # if not isinstance(dish_name, Restaurant):
+        #    raise ValueError("Dish not available")
         if dish_name not in self.menu:
             return "Dish not available"
 
