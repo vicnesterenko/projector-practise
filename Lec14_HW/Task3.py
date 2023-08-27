@@ -1,4 +1,3 @@
-# in progress
 class Account:
     def __init__(self, balance, account_number):
         self._balance = balance
