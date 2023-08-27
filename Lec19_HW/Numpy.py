@@ -32,8 +32,7 @@ def taskC():
     table_data = [(F(x)) for x in x_range]
     data = {"x": x_range, "F(x)": table_data}
     table = tabulate(data, headers="keys", tablefmt="pretty")
-
-    # print(table)
+    print(table)
 
 
 if __name__ == "__main__":
