@@ -36,7 +36,7 @@ class SavingsAccount(Account):
         self.interest = interest
 
     def add_interest_to_account(self):
-        pass
+        self._balance += self._balance * (self.interest / 100)
 
 
 class CurrentAccount(Account):
@@ -45,4 +45,15 @@ class CurrentAccount(Account):
         self.limit = limit
 
 
-# class Bank()
+class Bank:
+    def __init__(self, accounts: list[Account]):
+        self.accounts = accounts
+
+    def open_account(self):
+        pass
+
+    def close_account(self):
+        pass
+
+    def pay_dividends(self):
+        pass
