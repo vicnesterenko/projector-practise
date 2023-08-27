@@ -1,5 +1,6 @@
 import numpy as np
 from tabulate import tabulate
+from pprint import pprint
 
 
 def taskA():
@@ -32,7 +33,7 @@ def taskC():
     data = {"x": x_range, "F(x)": table_data}
     table = tabulate(data, headers="keys", tablefmt="pretty")
 
-    print(table)
+    # print(table)
 
 
 if __name__ == "__main__":
