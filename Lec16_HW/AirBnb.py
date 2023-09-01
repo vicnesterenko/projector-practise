@@ -111,11 +111,6 @@ def db_create_tables(conn):
         # print(query)
 
 
-import psycopg2
-
-# Your db_connect function here
-
-
 def insert_guest(conn, name, email, password, phone, credit_card):
     try:
         with conn.cursor() as cursor:
