@@ -262,7 +262,7 @@ if __name__ == "__main__":
     review_id = insert_review(conn, guest_id, host_id, room_id, 4.5, "Love this!")
     payment_id = insert_payment(conn, guest_id, reservation_id, "Master Card", 1234)
 
-    select_query = "SELECT * FROM Ro;"
+    select_query = "SELECT * FROM Rooms;"  # from choosen table
     with conn.cursor() as cursor:
         conn.rollback()
 
